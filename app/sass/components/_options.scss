@@ -1,0 +1,23 @@
+.options__list {
+	margin: 0;
+	list-style: none;
+	padding: 65px 0;
+	@include clearfix;
+}
+
+.options__item {
+	width: 356px;
+	float: left;
+	text-align: center;
+}
+
+.options__link {
+	display: inline-block;
+	width: 231px;
+	height: 231px;
+	background-color: #bd0f1f;
+}
+
+.options__text {
+	color: #fff;
+}

@@ -1,6 +1,46 @@
+footer.page-footer
+	.column
+		.container
+			ul.column__list
+				each item in ['О компании', 'Основная деятельность', 'Руководство', 'Вакансии', 'Контакты']
+					li.column__item
+						a.column__link(href="#")= item
+
+			ul.column__list
+				each item in ['Потребителям', 'Тарифы','Образцы договоров теплоснабжения и горячего водоснабжения', 'Узлы учета тепловой энергии', 'Раскрытие информации' ,'Нормативные документы','Дебиторская задолженность', 'Вопрос-ответ']
+					li.column__item
+						a.column__link(href="#")= item
+
+			ul.column__list
+				each item in ['Подключение к теплоснабжению', 'Нормативные документы', 'Плата за подключении', 'Форма заявки на подключения', 'Образец договора на подключение']
+					li.column__item
+						a.column__link(href="#")= item
+
+			ul.column__list
+				each item in ['Закупки', 'Основная деятельность', 'Положение о закупках', 'План закупок', 'Нормативные документы']
+					li.column__item
+						a.column__link(href="#")= item
+
+			ul.column__list
+				each item in ['Пресс центр', 'Новости компании', 'СМИ о компании']
+					li.column__item
+						a.column__link(href="#")= item
+
+			ul.column__list.column__list--last
+				li.column__item
+					a.column__link(href="#") Территория обслуживания
+
+	.footer-addr
+		.container
+			.footer-addr__name ООО Северная ТК
+			.footer-addr__place Санкт-петербург, пос. Мурино, ул. Главная, строение 8 
+			.footer-addr__contacts
+				a.footer-addr__link.footer-addr__link--email(href="mailto:email@tksevernaya.ru") email@tksevernaya.ru,
+				a.footer-addr__link(href="tel:(812) 421-00-00")  (812) 421-00-00
+			.copy
+				.copy__text (с) Северная ТК, 2015
 <!-- build:js js/vendor.js --> 
 //bower:js
-script(src='/bower/modernizr/modernizr.js')
 script(src='/bower/jquery/dist/jquery.js')
 script(src='/bower/jquery-placeholder/jquery.placeholder.js')
 //endbower

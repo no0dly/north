@@ -1,0 +1,44 @@
+.banner {
+	background-color: #9b9490;
+	border-top: 4px solid #bd0f1f;
+	border-bottom : 4px solid #363636;
+	.container {
+		height: 352px;
+		background: url('../images/banner-bg2.png') no-repeat;
+		background-size: cover;
+		padding: 60px 30px 0;
+	}
+}
+
+.banner__wrap {
+	width: 350px;
+	float: right;
+}
+
+.banner-title {
+	margin-bottom: 20px;
+}
+
+.banner-title__text {
+	margin: 0;
+	padding: 0;
+	font-size: 49.11px;
+	color: #fff;
+	font-family: 'NeoSansW1G-Light';
+}
+
+.banner-descr {
+	margin-bottom: 15px;
+}
+
+.banner-descr__text {
+	font-size: 18px;
+	color: #fff;
+	font-family: 'NeoSansW1G-Light';
+}
+
+.banner-more__link {
+	font-size: 14px;
+	color: #fff;
+	font-family: 'NeoSansW1G-Light';
+}

@@ -1,0 +1,30 @@
+section.question
+	.container
+		
+		.title
+			h3.title__text Задать вопрос
+
+		form(action="" method="POST")
+			.ask
+				.ask__group
+					label.ask__label Представьтесь, пожалуйста
+						span.ask__span *
+						input.ask__input(type="text" name="name")
+					label.ask__label Ваш e-mail
+						span.ask__span *
+						input.ask__input(type="email" name="email")
+					label.ask__label Ваш вопрос
+						span.ask__span *
+						input.ask__input(type="text" name="name")
+				.ask-capcha
+					label.ask__label Представьтесь, пожалуйста
+						span.ask__span *
+						input.ask__input(type="text" name="name")
+					.capcha
+				.ask-warning
+					.ask-warning__text
+						span.ask-warning__span *
+						| поля, обязательные для заполнения
+				.ask-submit
+					input.ask-submit__btn(type="submit" value="отправить")
+

@@ -1,0 +1,113 @@
+.nav {
+	float: right;
+}
+
+.nav__list,
+.nav-item__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav__list {
+	@include clearfix;
+	padding-top: 45px;
+	padding-right: 18px;
+}
+
+.nav__item {
+	float: left;
+	margin-left: 30px;
+	position: relative;
+}
+
+.nav__item:first-child {
+	margin-left: 0;
+}
+
+.nav-item__list {
+	display: none;
+
+	&:hover {
+		display: block;
+	}
+}
+
+.nav__link {
+	display: block;
+	font-size: 14px;
+	font-family: 'MuseoSansRegular';
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 20px;
+	// margin-bottom: 20px;
+	span {
+		display: block;
+	}
+	&:hover {
+		color: #bd0f1f;
+	}
+
+	&:hover ~ .nav-item__list {
+		display: block;
+	}
+}
+
+.nav-item__item {
+	width: 100%;
+	height: 100%;
+}
+
+.nav-item__list {
+	position: absolute;
+	width: 230px;
+	background-color: #fff;
+	margin-left: -15px;
+	border-top: 4px solid #bd0f1f;
+	border-bottom: 4px solid #bd0f1f;
+	padding: 8px 12px 8px 20px;
+
+	&:before {
+		display: block;
+		content: '';
+		width: 0;
+		height: 0;
+		border: 12px solid transparent;
+		top: -12px;
+		position: absolute;
+	}
+	&:before {
+		border-top: 0;
+		border-bottom-color: #bd0f1f;
+	}
+}
+
+.nav-item__link {
+	display: block;
+	padding: 18px 0 12px 4px;
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	font-family: 'MuseoSansRegular';
+	font-weight: 900;
+
+	&:hover {
+		color: #bd0f1f;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 1px;
+		background-color: #e1e1e1;
+		position: absolute;
+		top: 1px;
+	}
+}
+
+.nav-item__item:first-child .nav-item__link:before {
+	display: none;
+}
